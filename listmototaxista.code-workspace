@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "..\\..\\..\\Área de Trabalho\\projeto-web-ifba\\dist\\css"
+		},
+		{
+			"path": "..\\..\\..\\Área de Trabalho\\projeto-web-ifba\\dist\\js"
+		},
+		{
+			"path": "..\\..\\..\\Área de Trabalho\\projeto-web-ifba\\plugins"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "mototaxitas-pre-cadastro"
+	}
+}

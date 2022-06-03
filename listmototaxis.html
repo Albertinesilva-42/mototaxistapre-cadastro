@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Minha Lista</title>
+
+    <!-- Google Font: Source Sans Pro -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="/plugins/fontawesome-free/css/all.min.css">
+
+    <!-- Theme style -->
+    <link rel="stylesheet" href="/css/adminlte.min.css">
+
+</head>
+
+<body class="hold-transition sidebar-mini">
+    <!-- Site wrapper -->
+    <div class="wrapper">
+        <!-- Navbar -->
+        <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+            <!-- Left navbar links -->
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+                </li>
+                <li class="nav-item d-none d-sm-inline-block">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item d-none d-sm-inline-block">
+                    <a href="listmototaxis.html" class="nav-link">Lista de Moto Taxistas</a>
+                </li>
+                <li class="nav-item d-none d-sm-inline-block">
+                    <a href="#" class="nav-link">?</a>
+                </li>
+                <li class="nav-item d-none d-sm-inline-block">
+                    <a href="#" class="nav-link">?</a>
+                </li>
+                <li class="nav-item d-none d-sm-inline-block">
+                    <a href="#" class="nav-link">?</a>
+                </li>
+            </ul>
+
+            <!-- Right navbar links -->
+            <ul class="navbar-nav ml-auto">
+                <!-- Navbar Search -->
+                <li class="nav-item">
+                    <a class="nav-link" data-widget="fullscreen" href="#" role="button">
+                        <img src="/img/favicon-prefeitura.png" alt="Logo da Prefeitura"
+                            class="brand-image img-circle elevation-3" style="opacity: .8">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <!-- /.navbar -->
+
+        <!-- Main Sidebar Container -->
+        <aside class="main-sidebar sidebar-dark-primary elevation-4">
+            <!-- Brand Logo -->
+            <a href="#" class="brand-link">
+                <img src="img/Logo-smtt.jpeg" alt="Taça da Fifa" class="brand-image img-circle elevation-3"
+                    style="opacity: .8">
+                <span class="brand-text font-weight-light">SMTT</span>
+            </a>
+
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <!-- Sidebar user (optional) -->
+                <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+                    <div class="info">
+                        <a href="#" class="d-block">Secretaria de Trânsito/Transporte</a>
+                    </div>
+                </div>
+
+                <!-- Sidebar Menu -->
+                <nav class="mt-2">
+                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu"
+                        data-accordion="false">
+
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">
+                                <i class="nav-icon far fa-circle text-info"></i>
+                                <p>
+                                    Home
+                                    <span class="badge badge-info right"></span>
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="listmototaxis.html" class="nav-link">
+                                <i class="nav-icon far fa-circle text-info"></i>
+                                <p>
+                                    Lista de Moto Taxista
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon far fa-circle text-info"></i>
+                                <p>
+                                    ?
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon far fa-circle text-info"></i>
+                                <p>
+                                    ?
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon far fa-circle text-info"></i>
+                                <p>
+                                    ?
+                                </p>
+                            </a>
+                        </li>
+                        <img src="img/secretaria-de-transporte.jpg" alt="Taça da Fifa"
+                            class="brand-image img-circle elevation-3" style="opacity: .8">
+                        <span class="brand-text font-weight-light">SMTT</span>
+                    </ul>
+                </nav>
+                <!-- /.sidebar-menu -->
+            </div>
+            <!-- /.sidebar -->
+        </aside>
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper">
+            <!-- Main content -->
+            <section class="content">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <!-- /.card -->
+                        <div class="card card-info">
+                            <div class="card-header">
+                                <h2>Lista de Pré Cadastro de Moto Taxista</h2>
+                                <div class="card-tools">
+                                    <button type="button" class="btn btn-tool" data-card-widget="collapse"
+                                        title="Collapse">
+                                        <i class="fas fa-minus"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="card-tools">
+                                <div class="input-group input-group-sm">
+                                    <input type="text" id="mtxNomes" class="form-control" id="dev-table-filter"
+                                        data-action="filter" data-filters="#dev-table" placeholder="Pesquisar Nomes...">
+                                    <div class="input-group-append">
+                                        <div class="btn btn-primary">
+                                            <i class="fas fa-search"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="float-right">
+                                    1-50/200
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-default btn-sm">
+                                            <i class="fas fa-chevron-left"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-default btn-sm">
+                                            <i class="fas fa-chevron-right"></i>
+                                        </button>
+                                    </div>
+                                    <!-- /.btn-group -->
+                                </div>
+                                <!-- /.float-right -->
+                            </div>
+                            <div class="card-body p-0">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>NOME</th>
+                                            <th>NÚMERO DE ORDEM</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <table class="table table-hover" id="dev-table">
+                                            <tr>
+
+                                                <td>Albert silva de Jesus</td>
+                                                <th>1º</th>
+                                                <td class="project-actions text-right">
+                                                    <a class="btn btn-info btn-sm" href="#">
+                                                        <img src="img/favicon-legal.png" alt="">
+                                                        OK
+                                                    </a>
+
+                                                </td>
+                                            <tr>
+                                                <td>Rosa</td>
+                                                <th>Número de Ordem: 2º</th>
+                                                <td class="project-actions text-right">
+                                                    <a class="btn btn-info btn-sm" href="#">
+                                                        <img src="img/favicon-legal.png" alt="">
+                                                        OK
+                                                    </a>
+
+                                                </td>
+                                            <tr>
+                                                <td>Jaime</td>
+                                                <th>3º</th>
+                                                <td class="project-actions text-right">
+                                                    <a class="btn btn-info btn-sm" href="#">
+                                                        <img src="img/favicon-legal.png" alt="">
+                                                        OK
+                                                    </a>
+                                                </td>
+                                            <tr>
+                                            <tr>
+                                                <td>Sheila</td>
+                                                <th>5º</th>
+                                                <td class="project-actions text-right">
+                                                    <a class="btn btn-info btn-sm" href="#">
+                                                        <img src="img/favicon-legal.png" alt="">
+                                                        OK
+                                                    </a>
+                                                </td>
+                                        </table>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- /.card-body -->
+                        </div>
+                        <!-- /.card -->
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card card-primary card-outline">
+                            <div class="card-header"></div>
+                            <div class="card-body pad table-responsive">
+                                <table class="table table-bordered text-center">
+                                    <tr>
+                                        <td>
+                                            <button type="button"
+                                                class="btn btn-block btn-outline-primary btn-lg">Finalizar
+                                                Consulta</button>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <!-- /.card -->
+                        </div>
+                    </div>
+                    <!-- /.col -->
+                </div>
+            </section>
+            <!-- /.content -->
+        </div>
+        <!-- /.content-wrapper -->
+        <footer class="main-footer">
+            <div class="float-right d-none d-sm-block">
+                <b>Version</b> 3.2.0
+            </div>
+            <strong>Copyright &copy; 1979-2022 <a href="https://adminlte.io">Projeto Web</a>.</strong> All rights
+            reserved.
+        </footer>
+
+        <!-- Control Sidebar -->
+        <aside class="control-sidebar control-sidebar-dark">
+            <!-- Control sidebar content goes here -->
+        </aside>
+        <!-- /.control-sidebar -->
+    </div>
+    <!-- ./wrapper -->
+
+    <!-- jQuery -->
+    <script src="plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="js/adminlte.min.js"></script>
+
+    <!-- Buscar Mototaxistas -->
+    <script>
+        (function () {
+            'use strict';
+            var $ = jQuery;
+            $.fn.extend({
+                filterTable: function () {
+                    return this.each(function () {
+                        $(this).on('keyup', function (e) {
+                            $('.filterTable_no_results').remove();
+                            var $this = $(this),
+                                search = $this.val().toLowerCase(),
+                                target = $this.attr('data-filters'),
+                                $target = $(target),
+                                $rows = $target.find('tbody tr');
+
+                            if (search == '') {
+                                $rows.show();
+                            } else {
+                                $rows.each(function () {
+                                    var $this = $(this);
+                                    $this.text().toLowerCase().indexOf(search) === -1 ? $this.hide() : $this.show();
+                                })
+                                if ($target.find('tbody tr:visible').size() === 0) {
+                                    var col_count = $target.find('tr').first().find('td').size();
+                                    var no_results = $('<tr class="filterTable_no_results"><td colspan="' + col_count + '">No results found</td></tr>')
+                                    $target.find('tbody').append(no_results);
+                                }
+                            }
+                        });
+                    });
+                }
+            });
+            $('[data-action="filter"]').filterTable();
+        })(jQuery);
+
+        $(function () {
+            // attach table filter plugin to inputs
+            $('[data-action="filter"]').filterTable();
+
+            $('.container').on('click', '.panel-heading span.filter', function (e) {
+                var $this = $(this),
+                    $panel = $this.parents('.panel');
+
+                $panel.find('.panel-body').slideToggle();
+                if ($this.css('display') != 'none') {
+                    $panel.find('.panel-body input').focus();
+                }
+            });
+            $('[data-toggle="tooltip"]').tooltip();
+        })
+    </script>
+</body>
+
+</html>
